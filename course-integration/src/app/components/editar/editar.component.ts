@@ -52,7 +52,7 @@ export class EditarComponent implements OnInit {
 
     this._productsService.updateProduct(name, this.id, price).subscribe(products => {
       this.products = products;
-      this._router.navigate(['']);
+      this._router.navigate(['list']);
     });
 
   }

@@ -31,6 +31,6 @@ export class ListComponent implements OnInit {
   }
 
   public editarProduct(id: string | null): void {
-    this._routes.navigate(['editar', id],);
+    this._routes.navigate(['editar', id]);
   }
 }

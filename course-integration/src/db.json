@@ -4,16 +4,6 @@
       "name": "samsungs",
       "id": 1,
       "price": 100
-    },
-    {
-      "name": "note",
-      "id": 2,
-      "price": 200
-    },
-    {
-      "name": "xiaomi",
-      "id": 3,
-      "price": 300
     }
   ]
 }

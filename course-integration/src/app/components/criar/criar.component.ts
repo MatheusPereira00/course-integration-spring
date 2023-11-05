@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
 import { ProductsService } from 'src/app/data/service/products.service';
 import { Products } from 'src/app/data/interface/products';
@@ -16,6 +16,7 @@ export class CriarComponent {
   products!: Products;
 
   private _productsService = inject(ProductsService);
+  private _router = inject(Router);
 
   form = new FormGroup({
     name: new FormControl(''),
@@ -26,5 +27,6 @@ export class CriarComponent {
   public post(): void {
     const newProducts = this.form.getRawValue();
     this._productsService.postProduct(newProducts);
+    this._router.navigate(['list']);
   }
 }
