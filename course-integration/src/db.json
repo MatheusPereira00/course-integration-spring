@@ -9,6 +9,11 @@
       "name": "note",
       "id": 2,
       "price": 200
+    },
+    {
+      "name": "xiaomi",
+      "id": 3,
+      "price": 300
     }
   ]
 }

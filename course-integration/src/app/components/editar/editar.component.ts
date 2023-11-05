@@ -50,8 +50,10 @@ export class EditarComponent implements OnInit {
     const name = this.form.get('name')?.value;
     const price = this.form.get('price')?.value;
 
-    this._productsService.updateProduct(name, this.id, price).subscribe();
+    this._productsService.updateProduct(name, this.id, price).subscribe(products => {
+      this.products = products;
+      this._router.navigate(['']);
+    });
 
-    this._router.navigate(['']);
   }
 }
