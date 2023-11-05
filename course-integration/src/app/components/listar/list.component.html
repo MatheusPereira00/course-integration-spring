@@ -17,8 +17,8 @@
       <td>{{ product.price }}</td>
 
       <td class="td-btn">
-        <button class="btn-editar" routerLink="editar">editar</button>
-        <button class="btn-deletar">Excluir</button>
+        <button class="btn-editar" [routerLink]="['/editar', product.id]" routerLinkActive="router-link-active" >editar</button>
+        <button class="btn-deletar" (click)="deletProduct(product.id)">Excluir</button>
       </td>
     </tr>
   </tbody>

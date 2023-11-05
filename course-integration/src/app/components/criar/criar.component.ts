@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
 import { ProductsService } from 'src/app/data/service/products.service';
-import { Products, newProducts } from 'src/app/data/interface/products';
+import { Products } from 'src/app/data/interface/products';
 
 @Component({
   selector: 'app-criar',
@@ -25,6 +25,6 @@ export class CriarComponent {
 
   public post(): void {
     const newProducts = this.form.getRawValue();
-    this._productsService.postProduct(newProducts).subscribe();
+    this._productsService.postProduct(newProducts);
   }
 }

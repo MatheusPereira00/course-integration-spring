@@ -13,7 +13,7 @@ export const productsRoutes: Routes = [
     component: CriarComponent,
   },
   {
-    path: 'editar',
+    path: 'editar/:id',
     component: EditarComponent,
   },
 ];

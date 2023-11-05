@@ -1,7 +1,7 @@
 <p>editar works!</p>
 
-
-<table class="table">
+<form [formGroup]="form">
+  <table class="table">
     <thead>
       <tr>
         <th>name</th>
@@ -10,17 +10,22 @@
         <th class="th-btn">Actions</th>
       </tr>
     </thead>
-  
+
     <tbody>
       <tr>
-        <td>name</td>
-        <td>id</td>
-        <td>price</td>
-
+        <td>
+          <input type="text" formControlName="name" />
+        </td>
+        <td>
+          <input type="number" formControlName="id" />
+        </td>
+        <td>
+          <input type="number" formControlName="price" />
+        </td>
         <td class="td-btn">
-          <button class="btn-editar" routerLink="">Editar</button>
+          <button class="btn-editar" (click)="updateProduct()">Editar</button>
         </td>
       </tr>
     </tbody>
   </table>
-  
+</form>

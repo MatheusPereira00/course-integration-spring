@@ -4,7 +4,7 @@ export interface Products {
     price: string | null
 }
 
-export interface newProducts {
+export interface NewProducts {
     name: string | null;
     id: string | null;
     price: string | null;

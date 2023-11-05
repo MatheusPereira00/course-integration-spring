@@ -1,49 +1,48 @@
 .table {
-    border-collapse: collapse;
-    margin: 2.5rem;
-    font-size: 0.9em;
-    min-width: 85%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .table thead tr {
-    background-color: #009879;
-    color: white;
-    text-align: left;
-  }
-  
-  .table th,
-  .table td {
-    padding: 1.2rem 1.5rem;
-  }
-  
-  .table tbody tr {
-    border-bottom: 1px solid #dddddd;
-  }
-  
-  .table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-  }
-  
-  .table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-  }
-  
-  .th-btn {
-    display: flex;
-    margin-left: 3rem;
-  }
-  
-  .td-btn {
-    display: flex;
-    gap: 1.5rem;
-  }
-  .btn-editar {
-    width: 50px;
-    height: 38px;
-    background: #0052dd;
-    color: white;
-    border-radius: 0.8rem;
-    border: none;
-  }
-  
+  border-collapse: collapse;
+  margin: 2.5rem;
+  font-size: 0.9em;
+  min-width: 85%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table thead tr {
+  background-color: #009879;
+  color: white;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 1.2rem 1.5rem;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.th-btn {
+  display: flex;
+  margin-left: 3rem;
+}
+
+.td-btn {
+  display: flex;
+  gap: 1.5rem;
+}
+.btn-editar {
+  width: 50px;
+  height: 38px;
+  background: #0052dd;
+  color: white;
+  border-radius: 0.8rem;
+  border: none;
+}

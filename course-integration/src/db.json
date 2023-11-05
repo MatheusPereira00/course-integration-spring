@@ -1,24 +1,14 @@
 {
   "products": [
     {
-      "name": "iphone",
+      "name": "samsungs",
       "id": 1,
       "price": 100
     },
     {
-      "name": "samsung",
+      "name": "note",
       "id": 2,
       "price": 200
-    },
-    {
-      "name": "new",
-      "id": 3,
-      "price": 1000
-    },
-    {
-      "name": "new +",
-      "id": 4,
-      "price": 2000
     }
   ]
 }
