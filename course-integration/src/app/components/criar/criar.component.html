@@ -1,0 +1,31 @@
+<p>criar works!</p>
+
+<form [formGroup]="form">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>id</th>
+        <th>price</th>
+        <th class="th-btn">Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          <input type="text" formControlName="name" />
+        </td>
+        <td>
+          <input type="number"  formControlName="id"/>
+        </td>
+        <td>
+          <input type="number" formControlName="price"/>
+        </td>
+        <td class="td-btn">
+          <button class="btn-criar" routerLink="" (click)="post()">Criar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>

@@ -1,0 +1,29 @@
+<p>listar works!</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>id</th>
+      <th>price</th>
+      <th class="th-btn">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody *ngIf="getProducts$ | async as products">
+    <tr *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+      <td>{{ product.id }}</td>
+      <td>{{ product.price }}</td>
+
+      <td class="td-btn">
+        <button class="btn-editar" routerLink="editar">editar</button>
+        <button class="btn-deletar">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="criar">
+  <button class="btn-criar" routerLink="criar">Criar</button>
+</div>

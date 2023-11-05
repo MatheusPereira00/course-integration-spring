@@ -1,10 +1,14 @@
-import { Component, inject } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { Component } from '@angular/core';
+import { ListComponent } from './components/listar/list.component';
+import { RouterOutlet } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
-  template: ``,
+  template: `<router-outlet></router-outlet>`,
   styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [ListComponent, RouterOutlet, HttpClientModule],
 })
 export class AppComponent {
   title = 'course-integration';
