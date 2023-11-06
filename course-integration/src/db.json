@@ -3,7 +3,12 @@
     {
       "name": "samsungs",
       "id": 1,
-      "price": 100
+      "price": 200
+    },
+    {
+      "name": "iphone",
+      "id": 2,
+      "price": 2200
     }
   ]
 }
