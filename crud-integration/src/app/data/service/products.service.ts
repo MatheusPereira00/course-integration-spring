@@ -35,6 +35,7 @@ export class ProductsService {
   public postProduct(product: NewProducts) {
     return this._http
       .post<NewProducts>(`${environment.api}/products`, product)
+      .pipe(take(1))
       .subscribe((product) => {
         this._postProductSubject.next(product);
       });

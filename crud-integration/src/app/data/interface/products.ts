@@ -10,7 +10,6 @@ export interface NewProducts {
   price: string | null;
 }
 
-
 export class User {
   public email: string;
   public senha: string;
